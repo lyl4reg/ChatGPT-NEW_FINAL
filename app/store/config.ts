@@ -28,7 +28,7 @@ export enum Theme {
 export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
 
-  submitKey: isMacOS() ? SubmitKey.MetaEnter : SubmitKey.CtrlEnter,
+  submitKey: isMacOS() ? SubmitKey.MetaEnter : SubmitKey.Enter,
   avatar: "1f603",
   fontSize: 14,
   theme: Theme.Auto as Theme,
@@ -39,7 +39,7 @@ export const DEFAULT_CONFIG = {
 
   disablePromptHint: false,
 
-  dontShowMaskSplashScreen: false, // dont show splash screen when create chat
+  dontShowMaskSplashScreen: true, // dont show splash screen when create chat
   hideBuiltinMasks: false, // dont add builtin masks
 
   customModels: "",
@@ -49,11 +49,11 @@ export const DEFAULT_CONFIG = {
     model: "gpt-3.5-turbo" as ModelType,
     temperature: 0.5,
     top_p: 1,
-    max_tokens: 4000,
+    max_tokens: 32767, // I don't even know how much 2^15 is, I must be a terrible programmer. :(
     presence_penalty: 0,
     frequency_penalty: 0,
-    sendMemory: true,
-    historyMessageCount: 4,
+    sendMemory: false,
+    historyMessageCount: 64,
     compressMessageLengthThreshold: 1000,
     enableInjectSystemPrompts: true,
     template: DEFAULT_INPUT_TEMPLATE,
