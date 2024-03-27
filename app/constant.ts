@@ -291,6 +291,15 @@ export const DEFAULT_MODELS = [
       providerType: "google",
     },
   },
+  {
+    name: "i-just-want-to-use-the-first-custom-model",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "OpenAI",
+      providerType: "openai",
+    },
+  },
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
