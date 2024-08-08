@@ -175,7 +175,9 @@ export function SideBarHeader(props: {
           {title}
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          返回出现乱码，请刷新网页后重试请求.
+          整合常见模型，其中Gemini模型支持识图
+          <br />
+          私人自用,成本较高,请勿外传
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
