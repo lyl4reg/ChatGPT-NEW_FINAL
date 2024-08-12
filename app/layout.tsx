@@ -11,7 +11,7 @@ const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
   title: "ChatGpt(public version)",
-  description: "",
+  description: "Spec. Ver. for znz's colleagues",
   appleWebApp: {
     title: "ChatGpt",
     statusBarStyle: "default",
