@@ -175,9 +175,9 @@ export function SideBarHeader(props: {
           {title}
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          整合常见模型，其中Gemini模型支持识图
+          整合常见的模型，默认为Gemini-1.5-Pro模型，可以切换不同模型试验效果
           <br />
-          祝各位一切顺利
+          祝一切顺利！🫡🫡🫡
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
